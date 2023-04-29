@@ -1,0 +1,449 @@
+.fondo{
+    color: #fff;
+    background: linear-gradient(45deg,red,rgb(77, 47, 2),rgb(6, 101, 48),rgb(206, 41, 165));
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 21s ease-in-out infinite;
+    min-height: 100vh;
+    padding-bottom: 30px;
+}
+
+.titleil{
+    font-family: 'Fredoka One';
+    font-size: 80px;
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.palani{
+    font-family: 'Fredoka One';
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    animation: neonGlow 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+
+@keyframes neonGlow {
+    0% {
+      text-shadow: 0 0 10px rgba(255,255,255,.8),
+                   0 0 20px rgba(255,255,255,.8),
+                   0 0 22px  rgba(255,255,255,.8),
+                   0 0 40px  rgba(66,220,219,.8),
+                   0 0 60px  rgba(66,220,219,.8),
+                   0 0 80px  rgba(66,220,219,.5),
+                   0 0 100px rgba(66,220,219,.5),
+                   0 0 140px rgba(66,220,219,.5),
+                   0 0 200px rgba(66,220,219,.5);
+    }
+    100% {
+      text-shadow: 0 0 2px rgba(255,255,255,.8),
+                   0 0 8px rgba(255,255,255,.8),
+                   0 0 10px rgba(255,255,255,.8),
+                   0 0 20px rgba(66,220,219,.8),
+                   0 0 30px rgba(66,220,219,.8),
+                   0 0 40px rgba(66,220,219,.8),
+                   0 0 50px rgba(66,220,219,.5),
+                   0 0 80px rgba(66,220,219,.5);
+    }
+  }
+
+@keyframes cambiar {
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#banner img {
+    width: 100%;
+    height: 500px;
+}
+
+#banner .contenedor{
+    position: relative;
+    top: 50%;
+    text-align: center;
+    transform: translateX(0) translateY(-450%);
+    color: #fff;
+}
+
+#banner h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#tarjetafondo{
+    background-color: rgba(255, 255, 255, 0.918);
+    color: black;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    font-weight: 500;
+    font-family: 'Libre Baskerville', serif;
+}
+
+img{
+    object-fit: cover;
+}
+
+.LogoWindows{
+    height: 40px;
+    width: auto;
+}
+
+.titulo{
+    text-align: center;
+    padding: 35px;
+}
+
+.info{
+    text-align: center;
+    color:#fff;
+    font-family: 'Libre Baskerville', serif;
+    box-shadow: 0 4px 8px 0 rgba(0.3, 0.3, 0.3, 0.3),
+    0 6px 20px 0 rgba(0.19, 0.19, 0.19, 0.19);
+    padding: 30px;
+    font-size: 20px;
+    margin-left: 50vh;
+    margin-right: 50vh;
+}
+
+h2{
+    display: inline-block;
+    position: relative;
+    Font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+    font-weight: bold;
+}
+
+h2::after, h2::before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: currentColor;
+    top: 0.6em;
+}
+
+h2::before{
+    left: -140px;
+}
+
+h2::after{
+    right: -140px;
+}
+
+.tifundamentales{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+div#formulario {
+    width: auto;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    border-radius: 7px;
+
+
+    font-family: Calibri;
+    font-size: 22px;
+    color: white;
+}
+
+p{
+    padding-top: 15px;
+    font-size: larger;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+.pdfview{
+    margin: auto;
+    display: block;
+    width: 850px;
+    height: 85vh;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.arreglo{
+    padding-top: 5.5vh;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+
+#coloresanimados {
+  color: hsla(0, 0%, 0%, .9);
+  font: normal 50px Varela Round, sans-serif;
+  height: 140px;
+  left: 0;
+  letter-spacing: 5px;
+  margin: -5px 0 0 0;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 1.5%;
+  width: 100%;
+  animation: move linear 2000ms infinite;  
+}
+
+@keyframes move {
+  0% {
+    text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1), 
+      3px -3px 0 hsla(0, 100%, 50%, 1), 
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1), 
+      -3px 3px 0 hsla(180, 100%, 50%, 1), 
+      -2px 2px 0 hsla(180, 100%, 50%, 1), 
+      -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  25% {    
+    text-shadow:      
+      -4px -4px 0 hsla(180, 100%, 50%, 1), 
+      -3px -3px 0 hsla(180, 100%, 50%, 1), 
+      -2px -2px 0 hsla(180, 100%, 50%, 1), 
+      -1px -1px 0 hsla(180, 100%, 50%, 1),
+      4px 4px 0 hsla(0, 100%, 50%, 1), 
+      3px 3px 0 hsla(0, 100%, 50%, 1), 
+      2px 2px 0 hsla(0, 100%, 50%, 1), 
+      1px 1px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 hsla(0, 100%, 50%, 1), 
+      -3px 3px 0 hsla(0, 100%, 50%, 1), 
+      -2px 2px 0 hsla(0, 100%, 50%, 1), 
+      -1px 1px 0 hsla(0, 100%, 50%, 1),
+      4px -4px 0 hsla(180, 100%, 50%, 1), 
+      3px -3px 0 hsla(180, 100%, 50%, 1), 
+      2px -2px 0 hsla(180, 100%, 50%, 1), 
+      1px -1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 hsla(180, 100%, 50%, 1), 
+      3px 3px 0 hsla(180, 100%, 50%, 1), 
+      2px 2px 0 hsla(180, 100%, 50%, 1), 
+      1px 1px 0 hsla(180, 100%, 50%, 1),
+      -4px -4px 0 hsla(0, 100%, 50%, 1), 
+      -3px -3px 0 hsla(0, 100%, 50%, 1), 
+      -2px -2px 0 hsla(0, 100%, 50%, 1), 
+      -1px -1px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1), 
+      3px -3px 0 hsla(0, 100%, 50%, 1), 
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1), 
+      -3px 3px 0 hsla(180, 100%, 50%, 1), 
+      -2px 2px 0 hsla(180, 100%, 50%, 1), 
+      -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }  
+}
+
+.featured {
+  padding: 40px 20px;
+}
+
+.featured h2 img h3 p{
+
+ 
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+footer {
+  padding: 10px 20px;
+  background-color: #f7f8fb;
+  color: #666;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-info p, .legal-info p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.social-links a {
+  display: inline-block;
+  font-size: 24px;
+  color: #666;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #008000;
+}
+
+.legal-info p {
+  font-size: 14px;
+}
+
+.consejos {
+  text-align: justify;
+  line-height: 2em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.proyectos p{
+  text-align: justify;
+}
+
+nav {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*testimonios*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: serif;
+}
+
+.testimonios{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.testimonios_header{
+  margin: 50px 0px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonios_header h1{
+  font-size: 2.9rem;
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+}
+
+.testimonios_header span{
+  font-size: 2.2rem;
+  color: black;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.testimonios_contenedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.testimonios_caja{
+  width: 500px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 1);
+  background-color: white;
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.perfil-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 30px;
+}
+
+.perfil-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: center;
+}
+
+.perfil{
+  display: flex;
+  align-items: center;
+}
+
+.name-user{
+  display: flex;
+  flex-direction: column;
+}
+
+.name-user strong{
+  color: #3d3d3d;
+  font-size: 1.3rem;
+}
+
+.name-user span{
+  color: #979797;
+  font-size: 1.1rem;
+}
+
+.reseñas{
+  color: #f9f9f9;
+}
+
+.caja-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.comentarios_clientes p{
+  color: #4b4b4b;
+}
+
+::selection{
+  color: white;
+  background-color: #252525;
+}
+
